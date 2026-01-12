@@ -1,0 +1,80 @@
+================================================================================
+DENTAL AGE CLASSIFICATION - COMPLETE RESULTS
+================================================================================
+
+Configuration Parameters:
+  Image size: 128x128
+  HOG orientations: 9
+  GLCM angles: 4
+  GLCM distances: 3
+  PCA components: 25
+  SelectKBest features: 35
+
+Dataset Information:
+  Total images: 2341
+  Training samples: 1404
+  Testing samples: 937
+  Class distribution:
+    child: 846
+    adult: 1495
+
+Feature Engineering:
+  Raw features: 1795
+  Final features: 25
+  Feature extraction methods: HOG, GLCM, Statistical, Edge
+  Feature selection: PCA + SelectKBest
+
+Final Feature Names:
+  1. PCA_component_1
+  2. PCA_component_2
+  3. PCA_component_3
+  4. PCA_component_4
+  5. PCA_component_5
+  6. PCA_component_6
+  7. PCA_component_7
+  8. PCA_component_8
+  9. PCA_component_9
+  10. PCA_component_10
+  11. PCA_component_11
+  12. PCA_component_12
+  13. PCA_component_13
+  14. PCA_component_14
+  15. PCA_component_15
+  16. PCA_component_16
+  17. PCA_component_17
+  18. PCA_component_18
+  19. PCA_component_19
+  20. PCA_component_20
+  21. PCA_component_21
+  22. PCA_component_22
+  23. PCA_component_23
+  24. PCA_component_24
+  25. PCA_component_25
+
+Classifier Performance:
+--------------------------------------------------------------------------------
+Classifier           Accuracy     Precision    Recall       F1-Score     Time(s)   
+--------------------------------------------------------------------------------
+SVM                  0.9594       0.9632       0.9594       0.9598       0.11      
+XGBoost              0.9520       0.9564       0.9520       0.9525       0.22      
+Random Forest        0.9445       0.9500       0.9445       0.9451       0.17      
+Decision Tree        0.9007       0.9150       0.9007       0.9023       0.02      
+
+================================================================================
+Best Classifier: SVM
+================================================================================
+Accuracy:    0.9594
+Precision:   0.9632
+Recall:      0.9594
+F1-Score:    0.9598
+Sensitivity: 0.9381
+Specificity: 0.9971
+ROC AUC:     0.9989
+Training Time: 0.11 seconds
+
+Confusion Matrix:
+                    Predicted
+                 child    adult   
+  Actual child       338        1
+         adult        37      561
+
